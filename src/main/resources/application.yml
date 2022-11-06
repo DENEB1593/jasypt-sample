@@ -1,0 +1,11 @@
+spring:
+    datasource:
+        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+        url: jdbc:log4jdbc:mariadb://localhost:3306/user
+        username: ENC(2BeJcg/L2PNgXkvg84KxVA==)
+        password: ENC(4QCg2C8mY7rtdDlKIaWHrO6Ym/j8vQ5l)
+
+jasypt:
+    encryptor:
+        bean: jasyptStringEncryptor
+        password: 7AlHIwsnuPDEgqaAwMDZFK7CdMqJD6M #JVM 환경변수로 하는 것을 추천
